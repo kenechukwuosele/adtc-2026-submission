@@ -1,0 +1,37 @@
+{
+  "team_id": "codehome",
+  "domain": "coding_assistants",
+  "language_scope": ["en"],
+  "african_alpha_claim": true,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "kenechukwuosele",
+    "email": "oseleken9@gmail.com",
+    "github_handle": "kenechukwuosele"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "software_engineering",
+    "load_bearing": true,
+    "description": "An offline coding assistant for African developers who face unreliable internet connectivity, enabling access to code generation, debugging help, and programming guidance without cloud dependencies."
+  },
+  "test_prompts": [
+    {
+      "prompt_id": "tp_001",
+      "prompt": "I have a Python function that should return the second largest number in a list but it sometimes returns the wrong answer. Here is the code: def second_largest(nums): nums.sort(); return nums[-2]. What is the bug and how do I fix it?"
+    },
+    {
+      "prompt_id": "tp_002",
+      "prompt": "Write a JavaScript function that takes an array of objects with a price field and returns the total sum, handling cases where price might be a string instead of a number."
+    }
+  ],
+  "model": {
+    "name": "Qwen2.5-Coder-3B-Instruct-Q3_K_M",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q3_K_M",
+    "parameters_estimate": "3B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/Qwen2.5-Coder-3B-Instruct-Q3_K_M.gguf"
+  }
+}
